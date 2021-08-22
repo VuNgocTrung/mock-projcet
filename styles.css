@@ -1,0 +1,392 @@
+/* -------------------Chat---------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:inherit;
+}
+html{
+    box-sizing: border-box;
+}
+
+.chat{
+    display: flex;
+    height: 100vh;
+}
+
+.chat-list{
+    width: 20%;
+    border-right: 1px solid #F5F5F5 ;
+}
+
+#search{
+    border: none;
+    background-color: #F3F3F5;
+    width: 70%;
+}
+
+.fa-search{
+    margin-left: 5px;
+}
+
+.chat-list-search{
+    background-color: #F3F3F5;
+    width: 90%;
+    margin: 0 auto;
+    height: 30px;
+    padding-top: 7px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.chat-list-col{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.chat-list-item-avt i{
+    color: aliceblue;
+    padding-top: 6px;
+}
+
+.chat-list-item-avt{
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    background-color: #61C2F9;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.bland{
+    color: #CCCCCC;
+}
+
+.chat-list-col-item{
+    background-color: #F3F3F5;
+    height: 40px;
+    border-radius: 10px;
+}
+
+
+
+.chat-message-first{
+    background-color: #F5F5F5;
+    width: 35%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.chat-message-two{
+    background-color: #61C2F9;
+    width: 35%;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 480px;
+}
+
+.chat-box-info-head{
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.chat-box-info{
+    margin-left: 10px;
+    display: inline-block;
+}
+.chat-box{
+    width: 60%;
+    position: relative;
+}
+
+.chat-box-info-avt i{
+    color: aliceblue;
+    padding-top: 6px;
+}
+
+.chat-box-info-avt{
+    text-align: center;
+  height: 30px;
+  width: 30px;
+  background-color: #61C2F9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.chat-box-info-bottom{
+    width: 96%;
+    position: absolute;
+    bottom: 10px;
+    left: 3%;
+}
+#text-bottom{
+    border: none;
+    background-color: #F3F3F5;
+    width: 95%;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.chat-profile{
+    width: 20%;
+    text-align: center;
+    border-left: 1px solid #F5F5F5 ;
+}
+
+.chat-info{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.chat-info p{
+    margin-top: 10px;
+}
+.profile-avt i{
+    color: aliceblue;
+    padding-top: 15px;
+    font-size: 40px;
+}
+.profile-avt{
+  height: 80px;
+  width: 80px;
+  background-color: #61C2F9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.scoll-list{
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scoll-list::-webkit-scrollbar {
+    width: 20px;
+}
+
+.scoll-list::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+.scoll-chat{
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scoll-chat::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+
+
+/* -------------------------------Comment-------------------- */
+
+.posts{
+    display: flex;
+    height: 100vh;
+}
+
+.posts-list{
+    width: 40%;
+    border-right: 1px solid #F5F5F5;
+}
+
+.posts-add{
+    width: 60%;
+    position: relative;
+}
+
+.posts-list-tag{
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.poster-profile{
+    display: flex;
+    padding-top: 10px;
+}
+
+.poster-info-avt i{
+    color: aliceblue;
+    padding-top: 6px;
+}
+
+.poster-info-avt{
+    text-align: center;
+  height: 30px;
+  width: 30px;
+  background-color: #61C2F9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.poster{
+    height: 90vh;
+    background-color: #F3F3F5;
+    width: 96%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.poster-info{
+    margin-left: 5px;
+}
+
+.poster-text{
+    margin-left: 10px;
+}
+
+
+.text-comment{
+    background-color: #F0F2F5;
+    width: 40%;
+    height: 60px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.scoll-comment{
+    display: flex;
+    margin-top: 20px;
+}
+
+.comment{
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.comment i{
+    margin-left: 10px;
+}
+
+.comment h4{
+    padding-left: 10px;
+}
+
+.posts-add-bottom-avt i{
+    color: aliceblue;
+    padding-top: 4px;
+}
+
+.posts-add-bottom-avt{
+    text-align: center;
+  height: 25px;
+  width: 25px;
+  background-color: #61C2F9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.posts-add-bottom{
+    width: 96%;
+    position: absolute;
+    bottom: 10px;
+    left: 3%;
+}
+
+#text-add-bottom{
+    border: none;
+    background-color: #F3F3F5;
+    width: 90%;
+    height: 25px;
+    border-radius: 20px;
+}
+
+/* -------------------------News--------------------- */
+
+.news{
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    padding: 20px 40px;
+}
+
+.news-heading{
+    width: 30%;
+}
+
+.news-button{
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.add-news{
+    display: flex;
+}
+
+.add-news button{
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    background-color: #2D9EE2;
+}
+
+.add-news p{
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.add-button button{
+    width: 25px;
+    height: 25px;
+    color: #FFFFFF;
+    background-color: #CCCCCC;
+}
+
+.add-button{
+    margin-left: 20px;
+}
+
+#next{
+    width: 45px;
+}
+
+.new-list{
+    padding: 20px 40px;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+}
+
+.new-list-tag{
+    width: 30%;
+}
+
+.new-list-pro{
+    display: flex;
+    width: 70%;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.new-list-view{
+    color: #CCCCCC;
+    margin-right: 30px;
+}
+
+.new-list-cmt{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.new-list-tag h4{
+    color: #0047FF;
+}
